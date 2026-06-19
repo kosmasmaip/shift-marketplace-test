@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "doitforme_shift": {
+      "type": "http",
+      "url": "https://backend.shift.doitforme.eu/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SHIFT_MCP_API_KEY}"
+      }
+    }
+  }
+}
