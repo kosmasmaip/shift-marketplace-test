@@ -3,8 +3,7 @@
     "doitforme_shift": {
       "type": "http",
       "url": "https://backend.shift.doitforme.eu/mcp",
-      "required": true,
-      "bearer_token_env_var": "SHIFT_MCP_API_KEY"
+      "required": true
     }
   }
 }

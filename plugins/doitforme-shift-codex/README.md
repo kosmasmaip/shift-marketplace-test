@@ -4,23 +4,18 @@ This private Codex plugin bundles Shift skills and a remote MCP server definitio
 
 ## User setup
 
-1. Get your personal `SHIFT_MCP_API_KEY` from the Shift dashboard.
-2. Export it in your shell:
-
-```bash
-export SHIFT_MCP_API_KEY='<your-key>'
-```
-
-3. Install the marketplace and plugin:
+1. Install the marketplace and plugin:
 
 ```bash
 codex plugin marketplace add <path-or-repo-to-distribution/codex-plugin>
 codex plugin add doitforme-shift@doitforme-shift-marketplace
 ```
 
-4. If your Codex installation does not automatically wire the MCP server, add the `doitforme_shift` entry from [`.mcp.json`](./.mcp.json) to your Codex MCP configuration.
+2. When Codex prompts you to authenticate Shift, complete that step in the Codex UI.
+
+3. If your Codex installation does not automatically wire the MCP server, add the `doitforme_shift` entry from [`.mcp.json`](./.mcp.json) to your Codex MCP configuration.
 
 ## Notes
 
-- API-key auth is static and avoids the OAuth browser flow.
+- Codex should handle authentication during install or first use instead of requiring a shell environment variable.
 - This plugin keeps using the shared Shift remote MCP backend at `https://backend.shift.doitforme.eu/mcp`.
