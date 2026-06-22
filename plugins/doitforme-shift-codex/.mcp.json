@@ -2,8 +2,7 @@
   "mcpServers": {
     "doitforme_shift": {
       "type": "http",
-      "url": "https://backend.shift.doitforme.eu/mcp",
-      "bearer_token_env_var": "SHIFT_MCP_API_KEY"
+      "url": "https://backend.shift.doitforme.eu/mcp"
     }
   }
 }
